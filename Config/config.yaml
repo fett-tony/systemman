@@ -1,0 +1,218 @@
+System:
+	NetMgt: Systemd-Networkd
+	Netzwerk:
+	- /etc/network/interfaces
+	- /etc/hosts
+	- /etc/resolv.conf
+	- /etc/NetworkManager/NetworkManager.conf
+	- /etc/NetworkManager/system-connections/
+	Samba-Client:
+	- /etc/smb.conf
+	Firewall:
+	- /etc/ufw/
+	- /etc/ufw/
+	Grub:
+	- /etc/default/grub
+	- /boot/grub/
+Server:
+	LDAP:
+	- /etc/ldap/ldap.conf
+	- /etc/phpldapadmin/config.conf
+	Samba-Server:
+	- /etc/
+	Kerberos:
+	- /etc/
+	DHCP-Server:
+	- /etc/dhcp/dhclient.conf
+	- /etc/dhcp/dhclient.conf
+	Nameserver:
+	- /etc/bind/zones/
+	- /etc/bind9/name.conf
+	Wireless-AP:
+	- Netzwerkap16=1
+	- Netzwerkap17=1
+Software:
+	TUI:
+		Netzwerk:
+		- wavemon
+		- nmap
+		- netcat
+		- iptraf
+		- ethstatus
+		- tshark
+		- mtr
+		- btscanner
+		- btmon
+		- wicd-curses
+		- wireless-tools
+		- wpasupplicant
+		- jnettop
+		- ifplugd
+		- ceni
+		- resolvconf
+		Hardware:
+		- powertop
+		- exfat-fuse
+		- exfatutils
+		- ncdu
+		- iotop
+		- htop
+		- inxi
+		- hwinfo
+		- sysv_rc_conf
+		- sysstat
+		- syslog-ng
+		- lshw
+		- lshw-gtk
+		Gereate:
+		- alsa
+		- gpm
+		Sicherheit:
+		- lynis
+		- goaccess
+		- libpam_tmpdir
+		- ecryptfs-utils
+		- auditd
+		- fail2ban
+		Sonstige-apps:
+		- mc
+		- elinks
+		- aptitude
+		- apachetop
+		- cmus
+		- moc
+		- partimage
+		- guessnet
+		- debsecan
+		- debsums
+		- debian-goodies
+		- apt-listchanges
+	Gnome-core:
+	- gnome-shell
+	- gnome-terminal
+	- gnome-tweak-tool
+	- gnome-software
+	- synaptic
+	- firefox
+	- gedit
+	- nautilus
+	- sysinfo
+	- gparted
+	- nautilus-admin
+	- nautilus-hide
+	- nautilus-share
+	- file-roller
+	- alacarte
+	- gdebi
+	Lxqt:
+	- lximage-qt
+	- lxqt
+	- lxqt-about
+	- lxqt-admin
+	- lxqt-build-tools
+	- lxqt-common
+	- lxqt-config
+	- lxqt-core
+	- lxqt-globalkeys
+	- lxqt-notificationd
+	- lxqt-openssh-askpass
+	- lxqt-panel
+	- lxqt-policykit
+	- lxqt-powermanagement
+	- lxqt-qtplugin
+	- lxqt-runner
+	- lxqt-session
+	- lxqt-sudo
+	Development:
+	- build-essential
+	- gnome-builder
+	- qtcreator
+	- qtbase5-dev-tools
+	- gcc
+	- g++
+	- gdb
+	- flex
+	- bison
+	XServer:
+	- xserver-xorg
+	- xinit
+	- xterm
+SystemMan:
+	Config: /home/aktony/Dokumente/QT-Builder/Meine_App/SystemMan/config.txt
+	DB: /home/aktony/Dokumente/QT-Builder/Meine_App/SystemMan/SystemMan.db
+	Start: /home/aktony/Dokumente/QT-Builder/Meine_App/build-SystemMan-Desktop_Qt_5_11_0_GCC_64bit-Debug/SystemMan
+Befehle:
+	System-Services:
+	- systemctl -r --type service --all
+	- systemctl -l --type service --all
+	- systemctl list-units
+	- systemctl list-units -a --state=inactive
+	- systemctl list-units -a
+	- service postgresql status
+	- service --status-all
+	- ls /etc/init.d
+	- ls -C /etc/rc*.d | more
+	- update-rc.d
+	- check-language-support
+	- df -H
+	Hardware:
+	- lspci
+	- lsusb
+	- lscpu
+	- lspci -nn
+	- lshw -short
+	- inxi -N
+	- hwinfo --short
+	- hwinfo --network --netcard
+	- initctl list
+	- mount | column -t | grep ext
+	- hdparm -i /dev/sda
+	- free -m
+	- mount | column -t
+	- rfkill list
+	Netzwerk:
+	- route -n
+	- iwconfig
+	- ethtool eth0
+	- ip link show
+	- ls /sys/class/net
+	- nmcli device show wlan0
+	- networkctl -a
+	- ip neighbour
+	- ip -s link show dev eth0
+	- iptables -L OUTPUT -n -v
+	- iptables -L INPUT -n -v
+	- netstat -i
+	- iw dev wlan0 scan
+	- hciconfig
+	- systemd-resolve --statistics
+	Software-Center:
+	- dpkg -l
+	- apt-cache show firefox | grep -w Description-de -A 5
+	- apt-cache search
+	Grub:
+	- echo > GRUB_CMDLINE_LINUX="net.ifnames=0 biosdevname=0"
+	- update-grub
+	- grub-mkconfig -o /boot/grub/grub.cfg
+	Systeminfo:
+	- uname -a
+	- dmesg | grep -i eth
+	- locate -A -w testapp
+	- find /sys/class/net -follow -maxdepth 2 -name wireless | cut -d / -f 5
+	- find /sys/class/net -follow -maxdepth 2 -name phy80211 | cut -d / -f 5
+	- find ./ -iname idVendor -type f
+	- strace ifconfig
+	- watch -n 5 'ifconfig eth0'
+	- cat /sys/class/net/wlan0/operstate
+	- cat /sys/class/net/wlan0/carrier
+	- cat /sys/class/net/eth0/statistics/rx_bytes
+	- cat /sys/class/net/eth0/statistics/rx_packets
+	- cat /sys/class/net/eth0/address
+	- cat /proc/partitions
+	- cat /proc/cpuinfo
+	- cat /proc/meminfo
+	- cat /proc/version
+	- cat /proc/scsi/scsi
+	- cat /proc/net/wireless
+	- cat /proc/net/dev
+

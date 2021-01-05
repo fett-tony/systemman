@@ -1,0 +1,136 @@
+﻿####################################################################################################
+#1.System
+#1.1.Netzwerk
+####################################################################################################
+Netzwerk01=/etc/network/interfaces
+Netzwerk02=/etc/hosts
+Netzwerk03=/etc/resolv.conf
+####################################################################################################
+#1.1.4.NetworkManager  false
+####################################################################################################
+Netzwerk04=/etc/NetworkManager/NetworkManager.conf
+Netzwerk05=/etc/NetworkManager/system-connections/
+####################################################################################################
+#1.2.Samba-client
+####################################################################################################
+sambac06=/etc/smb.conf
+####################################################################################################
+#1.3.Firewall
+####################################################################################################
+firewall07=/etc/ufw/
+firewall08=/etc/ufw/
+####################################################################################################
+#1.4.Grub Bootloader
+####################################################################################################
+GRUB09=/etc/default/grub
+GRUB10=/boot/grub/
+####################################################################################################
+#2.Server
+#2.1.LDAP
+####################################################################################################
+ldap9=/etc/ldap/ldap.conf
+ldap10=/etc/phpldapadmin/config.conf
+####################################################################################################
+#2.2.Samba-Server
+####################################################################################################
+sambas11=1.
+####################################################################################################
+#2.3.Kerberos
+####################################################################################################
+kerberos12=1.
+####################################################################################################
+#2.4.DHCP
+####################################################################################################
+dhcps13=/etc/dhcp/dhclient.conf
+#dhcp_client_13_/etc/dhcp/dhclient.conf
+####################################################################################################
+#2.5.Nameserver
+####################################################################################################
+nameserver14=/etc/bind/zones/
+nameserver15=/etc/bind9/name.conf
+####################################################################################################
+#2.6.WLan-AP
+####################################################################################################
+Netzwerkap16=1.
+Netzwerkap17=1
+####################################################################################################
+#3.Software
+####################################################################################################
+Software18=powertop;mc;exfat-fuse;exfat-utils;gpm;elinks;aptitude;wavemon;ncdu;iotop;apachetop;htop;nmap;netcat;inxi;hwinfo;iptraf;ethstatus;tshark;mtr;cmus;moc;alsa;ceni;sysv_rc_conf;lynis;goaccess;jnettop;partimage;lshw;lshw-gtk;inxi;btscanner;btmon;wicd-curses;wireless-tools;wpasupplicant;guessnet;ifplugd;resolvconf;gnome-shell;gnome-terminal;gnome-tweak-tool;software-center;synaptic;firefox;gedit;nautilus;sysinfo;gparted;nautilus-admin;nautilus-hide;nautilus-share;file-roller;alacarte;gdebi;libpam_tmpdir;debsecan;debsums;fail2ban;debian-goodies;apt-listchanges;ecryptfs-utils;sysstat;auditd;syslog-ng;build-essential;gnome-builder;xserver-xorg;xinit;xterm;qtcreator;qtbase5-dev-tools;gcc;g++;gdb;flex;bison;lximage-qt;lxqt;lxqt-about;lxqt-admin;lxqt-build-tools;lxqt-common;lxqt-config;lxqt-core;lxqt-globalkeys;lxqt-notificationd;lxqt-openssh-askpass;lxqt-panel;lxqt-policykit;lxqt-powermanagement;lxqt-qtplugin;lxqt-runner;lxqt-session;lxqt-sudo
+####################################################################################################
+#4.SystemMan
+####################################################################################################
+SystemManConfig=/home/aktony/Dokumente/QT-Builder/Meine_App/SystemMan/config.txt
+SystemManDB=/home/aktony/Dokumente/QT-Builder/Meine_App/SystemMan/SystemMan.db
+SystemManStart=/home/aktony/Dokumente/QT-Builder/Meine_App/build-SystemMan-Desktop_Qt_5_11_0_GCC_64bit-Debug/SystemMan
+####################################################################################################
+#5.Befehle
+####################################################################################################
+Befehl01=systemctl -r --type service --all
+Befehl02=systemctl -l --type service --all
+Befehl03=systemctl list-units
+Befehl04=systemctl list-units -a --state=inactive
+Befehl05=systemctl list-units -a
+Befehl06=service postgresql status
+Befehl07=service --status-all
+Befehl08=initctl list
+Befehl09=ls /etc/init.d
+Befehl10=update-rc.d
+Befehl11=lshw -short
+Befehl12=lspci
+Befehl13=lsusb
+Befehl14=lscpu
+Befehl15=ls -C /etc/rc*.d | more
+Befehl16=uname -a
+Befehl17=lspci -nn
+Befehl18=route -n
+Befehl19=iwconfig
+Befehl20=dmesg | grep -i eth
+Befehl21=befehl für GRUB_CMDLINE_LINUX='net.ifnames=0 biosdevname=0'
+Befehl22=update-grub
+Befehl23=sudo grub-mkconfig -o /boot/grub/grub.cfg
+Befehl24=apt-cache search
+Befehl25=dpkg -l
+Befehl26=apt-cache show firefox | grep -w Description-de: -A 5
+Befehl27=rfkill list
+Befehl28=sudo ethtool eth0
+Befehl29=ip link show
+Befehl30=ls /sys/class/net
+Befehl31=nmcli device show wlan0
+Befehl32=networkctl -a
+Befehl33=locate -A -w testapp
+Befehl34=check-language-support
+Befehl35=ip neighbour
+Befehl36=systemd-resolve --statistics
+Befehl37=mount | column -t
+Befehl38=df -H
+Befehl39=inxi -N
+Befehl40=hwinfo --short
+Befehl41=hwinfo --network --netcard
+Befehl42=mount | column -t | grep ext
+Befehl43=sudo hdparm -i /dev/sda
+Befehl44=free -m
+Befehl45=find /sys/class/net -follow -maxdepth 2 -name wireless | cut -d / -f 5
+Befehl46=find /sys/class/net -follow -maxdepth 2 -name phy80211 | cut -d / -f 5
+Befehl47=find ./ -iname idVendor -type f
+Befehl48=netstat -i
+Befehl49=sudo iw dev wlan0 scan
+Befehl50=strace ifconfig
+Befehl51=watch -n 5 'ifconfig eth0'
+Befehl52=ip -s link show dev eth0
+Befehl53=sudo iptables -L OUTPUT -n -v
+Befehl54=sudo iptables -L INPUT -n -v
+Befehl55=hciconfig
+Befehl56=cat /sys/class/net/wlan0/operstate
+Befehl57=cat /sys/class/net/wlan0/carrier
+Befehl58=cat /sys/class/net/eth0/statistics/rx_bytes
+Befehl59=cat /sys/class/net/eth0/statistics/rx_packets
+Befehl60=cat /sys/class/net/eth0/address
+Befehl61=cat /proc/partitions
+Befehl62=cat /proc/cpuinfo
+Befehl63=cat /proc/meminfo
+Befehl64=cat /proc/version
+Befehl65=cat /proc/scsi/scsi
+Befehl66=cat /proc/net/wireless
+Befehl67=cat /proc/net/dev
+###################################################################################################

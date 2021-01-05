@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SystemMan>
+	<Configuration>
+		<System>
+			<NetMgt class="Netzwerk">Systemd-Networkd</NetMgt>
+			<systempath class="Netzwerk">/etc/network/interfaces</systempath>
+			<systempath class="Netzwerk">/etc/hosts</systempath>
+			<systempath class="Netzwerk">/etc/resolv.conf</systempath>
+			<systempath class="Netzwerk">/etc/NetworkManager/NetworkManager.conf</systempath>
+			<systempath class="Netzwerk">/etc/NetworkManager/system-connections/</systempath>
+			<systempath class="Samba-Client">/etc/smb.conf</systempath>
+			<systempath class="Firewall">/etc/ufw/</systempath>
+			<systempath class="Firewall">/etc/ufw/</systempath>
+			<systempath class="Grub">/etc/default/grub</systempath>
+			<systempath class="Grub">/boot/grub/</systempath>
+		</System>
+		<Server>
+			<systempath class="LDAP">/etc/ldap/ldap.conf</systempath>
+			<systempath class="LDAP">/etc/phpldapadmin/config.conf</systempath>
+			<systempath class="Samba-Server">/etc/</systempath>
+			<systempath class="Kerberos">/etc/</systempath>
+			<systempath class="DHCP-Server">/etc/dhcp/dhclient.conf</systempath>
+			<systempath class="DHCP-Server">/etc/dhcp/dhclient.conf</systempath>
+			<systempath class="Nameserver">/etc/bind/zones/</systempath>
+			<systempath class="Nameserver">/etc/bind9/name.conf</systempath>
+			<systempath class="Wireless-AP">Netzwerkap16=1</systempath>
+			<systempath class="Wireless-AP">Netzwerkap17=1</systempath>
+		</Server>
+		<Software>
+			<AppName class="TUI" group="Netzwerk">wavemon</AppName>
+			<AppName class="TUI" group="Netzwerk">nmap</AppName>
+			<AppName class="TUI" group="Netzwerk">netcat</AppName>
+			<AppName class="TUI" group="Netzwerk">iptraf</AppName>
+			<AppName class="TUI" group="Netzwerk">ethstatus</AppName>
+			<AppName class="TUI" group="Netzwerk">tshark</AppName>
+			<AppName class="TUI" group="Netzwerk">mtr</AppName>
+			<AppName class="TUI" group="Netzwerk">btscanner</AppName>
+			<AppName class="TUI" group="Netzwerk">btmon</AppName>
+			<AppName class="TUI" group="Netzwerk">wicd-curses</AppName>
+			<AppName class="TUI" group="Netzwerk">wireless-tools</AppName>
+			<AppName class="TUI" group="Netzwerk">wpasupplicant</AppName>
+			<AppName class="TUI" group="Netzwerk">jnettop</AppName>
+			<AppName class="TUI" group="Netzwerk">ifplugd</AppName>
+			<AppName class="TUI" group="Netzwerk">ceni</AppName>
+			<AppName class="TUI" group="Netzwerk">resolvconf</AppName>
+			<AppName class="TUI" group="Hardware">powertop</AppName>
+			<AppName class="TUI" group="Hardware">exfat-fuse</AppName>
+			<AppName class="TUI" group="Hardware">exfatutils</AppName>
+			<AppName class="TUI" group="Hardware">ncdu</AppName>
+			<AppName class="TUI" group="Hardware">iotop</AppName>
+			<AppName class="TUI" group="Hardware">htop</AppName>
+			<AppName class="TUI" group="Hardware">inxi</AppName>
+			<AppName class="TUI" group="Hardware">hwinfo</AppName>
+			<AppName class="TUI" group="Hardware">sysv_rc_conf</AppName>
+			<AppName class="TUI" group="Hardware">sysstat</AppName>
+			<AppName class="TUI" group="Hardware">syslog-ng</AppName>
+			<AppName class="TUI" group="Hardware">lshw</AppName>
+			<AppName class="TUI" group="Hardware">lshw-gtk</AppName>
+			<AppName class="TUI" group="Gereate">alsa</AppName>
+			<AppName class="TUI" group="Gereate">gpm</AppName>
+			<AppName class="TUI" group="Sicherheit">lynis</AppName>
+			<AppName class="TUI" group="Sicherheit">goaccess</AppName>
+			<AppName class="TUI" group="Sicherheit">libpam_tmpdir</AppName>
+			<AppName class="TUI" group="Sicherheit">ecryptfs-utils</AppName>
+			<AppName class="TUI" group="Sicherheit">auditd</AppName>
+			<AppName class="TUI" group="Sicherheit">fail2ban</AppName>
+			<AppName class="TUI" group="Sonstige-apps">mc</AppName>
+			<AppName class="TUI" group="Sonstige-apps">elinks</AppName>
+			<AppName class="TUI" group="Sonstige-apps">aptitude</AppName>
+			<AppName class="TUI" group="Sonstige-apps">apachetop</AppName>
+			<AppName class="TUI" group="Sonstige-apps">cmus</AppName>
+			<AppName class="TUI" group="Sonstige-apps">moc</AppName>
+			<AppName class="TUI" group="Sonstige-apps">partimage</AppName>
+			<AppName class="TUI" group="Sonstige-apps">guessnet</AppName>
+			<AppName class="TUI" group="Sonstige-apps">debsecan</AppName>
+			<AppName class="TUI" group="Sonstige-apps">debsums</AppName>
+			<AppName class="TUI" group="Sonstige-apps">debian-goodies</AppName>
+			<AppName class="TUI" group="Sonstige-apps">apt-listchanges</AppName>
+			<AppName class="Gnome-core">gnome-shell</AppName>
+			<AppName class="Gnome-core">gnome-terminal</AppName>
+			<AppName class="Gnome-core">gnome-tweak-tool</AppName>
+			<AppName class="Gnome-core">gnome-software</AppName>
+			<AppName class="Gnome-core">synaptic</AppName>
+			<AppName class="Gnome-core">firefox</AppName>
+			<AppName class="Gnome-core">gedit</AppName>
+			<AppName class="Gnome-core">nautilus</AppName>
+			<AppName class="Gnome-core">sysinfo</AppName>
+			<AppName class="Gnome-core">gparted</AppName>
+			<AppName class="Gnome-core">nautilus-admin</AppName>
+			<AppName class="Gnome-core">nautilus-hide</AppName>
+			<AppName class="Gnome-core">nautilus-share</AppName>
+			<AppName class="Gnome-core">file-roller</AppName>
+			<AppName class="Gnome-core">alacarte</AppName>
+			<AppName class="Gnome-core">gdebi</AppName>
+			<AppName class="LxQt">lximage-qt</AppName>
+			<AppName class="LxQt">lxqt</AppName>
+			<AppName class="LxQt">lxqt-about</AppName>
+			<AppName class="LxQt">lxqt-admin</AppName>
+			<AppName class="LxQt">lxqt-build-tools</AppName>
+			<AppName class="LxQt">lxqt-common</AppName>
+			<AppName class="LxQt">lxqt-config</AppName>
+			<AppName class="LxQt">lxqt-core</AppName>
+			<AppName class="LxQt">lxqt-globalkeys</AppName>
+			<AppName class="LxQt">lxqt-notificationd</AppName>
+			<AppName class="LxQt">lxqt-openssh-askpass</AppName>
+			<AppName class="LxQt">lxqt-panel</AppName>
+			<AppName class="LxQt">lxqt-policykit</AppName>
+			<AppName class="LxQt">lxqt-powermanagement</AppName>
+			<AppName class="LxQt"> lxqt-qtplugin</AppName>
+			<AppName class="LxQt">lxqt-runner</AppName>
+			<AppName class="LxQt">lxqt-session</AppName>
+			<AppName class="LxQt">lxqt-sudo</AppName>
+			<AppName class="Development">build-essential</AppName>
+			<AppName class="Development">gnome-builder</AppName>
+			<AppName class="Development">qtcreator</AppName>
+			<AppName class="Development">qtbase5-dev-tools</AppName>
+			<AppName class="Development">gcc</AppName>
+			<AppName class="Development">g++</AppName>
+			<AppName class="Development">gdb</AppName>
+			<AppName class="Development">flex</AppName>
+			<AppName class="Development">bison</AppName>
+			<AppName class="XServer">xserver-xorg</AppName>
+			<AppName class="XServer">xinit</AppName>
+			<AppName class="XServer">xterm</AppName>
+		</Software>
+		<SysMan>
+			<systempath type="config">/home/aktony/Dokumente/QT-Builder/Meine_App/SystemMan/config.txt</systempath>
+			<systempath type="Datenbank">/home/aktony/Dokumente/QT-Builder/Meine_App/SystemMan/SystemMan.db</systempath>
+			<systempath type="Startfile">/home/aktony/Dokumente/QT-Builder/Meine_App/build-SystemMan-Desktop_Qt_5_11_0_GCC_64bit-Debug/SystemMan</systempath>
+		</SysMan>
+		<Befehle>
+			<SysBefehl class="System-Services">systemctl -r --type service --all</SysBefehl>
+			<SysBefehl class="System-Services">systemctl -l --type service --all</SysBefehl>
+			<SysBefehl class="System-Services">systemctl list-units</SysBefehl>
+			<SysBefehl class="System-Services">systemctl list-units -a --state=inactive</SysBefehl>
+			<SysBefehl class="System-Services">systemctl list-units -a</SysBefehl>
+			<SysBefehl class="System-Services">service postgresql status</SysBefehl>
+			<SysBefehl class="System-Services">service --status-all</SysBefehl>
+			<SysBefehl class="System-Services">ls /etc/init.d</SysBefehl>
+			<SysBefehl class="System-Services">ls -C /etc/rc*.d | more</SysBefehl>
+			<SysBefehl class="System-Services">update-rc.d</SysBefehl>
+			<SysBefehl class="System-Services">check-language-support</SysBefehl>
+			<SysBefehl class="System-Services">df -H</SysBefehl>
+			<SysBefehl class="Hardware">lspci</SysBefehl>
+			<SysBefehl class="Hardware">lsusb</SysBefehl>
+			<SysBefehl class="Hardware">lscpu</SysBefehl>
+			<SysBefehl class="Hardware">lspci -nn</SysBefehl>
+			<SysBefehl class="Hardware">lshw -short</SysBefehl>
+			<SysBefehl class="Hardware">inxi -N</SysBefehl>
+			<SysBefehl class="Hardware">hwinfo --short</SysBefehl>
+			<SysBefehl class="Hardware">hwinfo --network --netcard</SysBefehl>
+			<SysBefehl class="Hardware">initctl list</SysBefehl>
+			<SysBefehl class="Hardware">mount | column -t | grep ext</SysBefehl>
+			<SysBefehl class="Hardware">hdparm -i /dev/sda</SysBefehl>
+			<SysBefehl class="Hardware">free -m</SysBefehl>
+			<SysBefehl class="Hardware">mount | column -t</SysBefehl>
+			<SysBefehl class="Hardware">rfkill list</SysBefehl>
+			<SysBefehl class="Netzwerk">route -n</SysBefehl>
+			<SysBefehl class="Netzwerk">iwconfig</SysBefehl>
+			<SysBefehl class="Netzwerk">ethtool eth0</SysBefehl>
+			<SysBefehl class="Netzwerk">ip link show</SysBefehl>
+			<SysBefehl class="Netzwerk">ls /sys/class/net</SysBefehl>
+			<SysBefehl class="Netzwerk">nmcli device show wlan0</SysBefehl>
+			<SysBefehl class="Netzwerk">networkctl -a</SysBefehl>
+			<SysBefehl class="Netzwerk">ip neighbour</SysBefehl>
+			<SysBefehl class="Netzwerk">ip -s link show dev eth0</SysBefehl>
+			<SysBefehl class="Netzwerk">iptables -L OUTPUT -n -v</SysBefehl>
+			<SysBefehl class="Netzwerk">iptables -L INPUT -n -v</SysBefehl>
+			<SysBefehl class="Netzwerk">netstat -i</SysBefehl>
+			<SysBefehl class="Netzwerk">iw dev wlan0 scan</SysBefehl>
+			<SysBefehl class="Netzwerk">hciconfig</SysBefehl>
+			<SysBefehl class="Netzwerk">systemd-resolve --statistics</SysBefehl>
+			<SysBefehl class="Software-Center">dpkg -l</SysBefehl>
+			<SysBefehl class="Software-Center">apt-cache show firefox | grep -w Description-de -A 5</SysBefehl>
+			<SysBefehl class="Software-Center">apt-cache search</SysBefehl>
+			<SysBefehl class="Grub">echo > GRUB_CMDLINE_LINUX_DEFAULT="net.ifnames=0 biosdevname=0"</SysBefehl>
+			<SysBefehl class="Grub">echo > GRUB_CMDLINE_LINUX="video=eDP-1:1920x1080x32"</SysBefehl>
+			<SysBefehl class="Grub">update-grub</SysBefehl>
+			<SysBefehl class="Grub">grub-mkconfig -o /boot/grub/grub.cfg</SysBefehl>
+			<SysBefehl class="Systeminfo">uname -a</SysBefehl>
+			<SysBefehl class="Systeminfo">dmesg | grep -i eth</SysBefehl>
+			<SysBefehl class="Systeminfo">locate -A -w testapp</SysBefehl>
+			<SysBefehl class="Systeminfo">find /sys/class/net -follow -maxdepth 2 -name wireless | cut -d / -f 5</SysBefehl>
+			<SysBefehl class="Systeminfo">find /sys/class/net -follow -maxdepth 2 -name phy80211 | cut -d / -f 5</SysBefehl>
+			<SysBefehl class="Systeminfo">find ./ -iname idVendor -type f</SysBefehl>
+			<SysBefehl class="Systeminfo">strace ifconfig</SysBefehl>
+			<SysBefehl class="Systeminfo">watch -n 5 'ifconfig eth0'</SysBefehl>
+			<SysBefehl class="Systeminfo">cat /sys/class/net/wlan0/operstate</SysBefehl>
+			<SysBefehl class="Systeminfo">cat /sys/class/net/wlan0/carrier</SysBefehl>
+			<SysBefehl class="Systeminfo">cat /sys/class/net/eth0/statistics/rx_bytes</SysBefehl>
+			<SysBefehl class="Systeminfo">cat /sys/class/net/eth0/statistics/rx_packets</SysBefehl>
+			<SysBefehl class="Systeminfo">cat /sys/class/net/eth0/address</SysBefehl>
+			<SysBefehl class="Systeminfo">cat /proc/partitions</SysBefehl>
+			<SysBefehl class="Systeminfo">cat /proc/cpuinfo</SysBefehl>
+			<SysBefehl class="Systeminfo">cat /proc/meminfo</SysBefehl>
+			<SysBefehl class="Systeminfo">cat /proc/version</SysBefehl>
+			<SysBefehl class="Systeminfo">cat /proc/scsi/scsi</SysBefehl>
+			<SysBefehl class="Systeminfo">cat /proc/net/wireless</SysBefehl>
+			<SysBefehl class="Systeminfo">cat /proc/net/dev</SysBefehl>
+			<SysBefehl class="Systeminfo">find . -type d -empty -delete</SysBefehl>
+		</Befehle>
+	</Configuration>
+</SystemMan>
+
+
