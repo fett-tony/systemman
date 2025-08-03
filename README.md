@@ -16,3 +16,4 @@ handle SIGSTOP pass nostop noprint
 show 
 Bildschirmfoto von 2021-01-12 04-46-34.png
 
+![Systemman ansicht](https://github.com/fett-tony/systemman/blob/main/README/Systemman1.png)
