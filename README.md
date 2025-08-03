@@ -45,6 +45,6 @@ Bildschirmfoto von 2021-01-12 04-46-34.png
 
 ![Systemman ansicht](https://github.com/fett-tony/systemman/blob/main/README/Systemman5.png)
 
-![Systemman ansicht](https://github.com/fett-tony/systemman/blob/main/README/Systemman6.png)
+![Systemman ansicht](https://github.com/fett-tony/systemman/blob/main/README/systemman6.png)
 
-![Systemman ansicht](https://github.com/fett-tony/systemman/blob/main/README/Systemman-7.png)
+![Systemman ansicht](https://github.com/fett-tony/systemman/blob/main/README/systemman-7.png)
